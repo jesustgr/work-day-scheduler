@@ -22,6 +22,12 @@ $(function () {
   // TODO: Add code to display the current date in the header of the page.
 
   // Function to apply the appropriate class to each time block based on the current hour
+  
+  // Function to save the user input in local storage
+  function saveEvent(hour, description) {
+    localStorage.setItem(hour, description);
+  }
+  
   function applyTimeBlockClasses() {
     var currentHour = dayjs().hour();
 
@@ -37,7 +43,15 @@ $(function () {
       }
     });
   }
-  
+
+  // Event listener for the save button click
+  $(".saveBtn").on("click", function () {
+    var hour = $(this).parent().attr("id");
+    var description = $(this).siblings(".description").val();
+
+    saveEvent(hour, description);
+  });
+
   // Display the current date in the header
   $("#currentDay").text(dayjs().format("dddd, MMMM D, YYYY"));
 
