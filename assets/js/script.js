@@ -21,6 +21,25 @@ $(function () {
   //
   // TODO: Add code to display the current date in the header of the page.
 
+  // Function to apply the appropriate class to each time block based on the current hour
+  function applyTimeBlockClasses() {
+    var currentHour = dayjs().hour();
+
+    $(".time-block").each(function () {
+      var hour = parseInt($(this).attr("id").split("-")[1]);
+
+      if (hour < currentHour) {
+        $(this).addClass("past");
+      } else if (hour === currentHour) {
+        $(this).addClass("present");
+      } else {
+        $(this).addClass("future");
+      }
+    });
+  }
+  
   // Display the current date in the header
   $("#currentDay").text(dayjs().format("dddd, MMMM D, YYYY"));
+
+  applyTimeBlockClasses();
 });
