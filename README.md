@@ -13,7 +13,7 @@
 
 ## Description 
 
-[Visit the Deployed Site](https://github.io/jesustgr/work-day-scheduler/)
+[Visit the Deployed Site](https://jesustgr.github.io/work-day-scheduler/)
 
 To complete this task, I created a simple calendar application that allows a user to save events for each hour of a typical working day (9am–5pm). This app runs in the browser and features dynamically updated HTML and CSS powered by jQuery. It also uses the Day.js library to work with date and time. It is meant for an employee with a busy schedule to add important events to a daily planner so that they can manage their time effectively.
 
