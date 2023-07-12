@@ -13,7 +13,7 @@
 
 ## Description 
 
-[Visit the Deployed Site](https://github.io/jesustgr/work-day-scheduler)
+[Visit the Deployed Site](https://github.io/jesustgr/work-day-scheduler/)
 
 To complete this task, I created a simple calendar application that allows a user to save events for each hour of a typical working day (9am–5pm). This app runs in the browser and features dynamically updated HTML and CSS powered by jQuery. It also uses the Day.js library to work with date and time. It is meant for an employee with a busy schedule to add important events to a daily planner so that they can manage their time effectively.
 
@@ -24,89 +24,48 @@ The screenshots below demonstrate the application's functionality.
 
 <img src="assets/images/top-of-page.png" height="450" width="720" >
 
-When the user opens the planner, the current day is displayed at the top of the calendar
+When the user opens the planner, the current day is displayed at the top of the calendar. When the user scrolls down, they are presented with time blocks for standard business hours of 9am to 5pm.
 
 <img src="assets/images/highlighted-time-block.png" height="450" width="720" >
+
+When hovering over a time block, the border is highlighted with a color according to the user's computer settings
+
 <img src="assets/images/save-button-hover.png" height="450" width="720" >
+
+When hovering over the blue area of the save button, the "save" logo in the middle of the button turns black. The center logo shows a little more interactivity when the user hovers over it, as it expands a bit.
+
 <img src="assets/images/color-according-to-time.png" height="450" width="720" >
+
+Each time block is color-coded to indicate whether it is in the past (gray), present (red), or future (green).
+
 <img src="assets/images/saves-to-local-storage.png" height="450" width="720" >
 
+The user can click into a time block to enter an event and click on the save button to save the event to local storage. Upon refreshing the site, these saved events persist on the page.
 
 ## Learning Points 
 
+Event Handling: The code demonstrates how to handle click events using jQuery's on() function. By attaching a click event listener to the save button, we can capture user interactions and perform the necessary actions, such as saving the event description to local storage.
 
-This is a good place to Explain what you Learned by creating this application.
-This is a great way to remind about all of the Complex Skills you now have.
-If the user is less experienced than you:
-They will be impressed by what you can do!
+DOM Traversal: The code utilizes DOM traversal methods provided by jQuery, such as parent(), siblings(), and find(). These methods allow us to navigate the DOM tree and select specific elements based on their relationships with other elements.
 
-If the user is more experienced than you:
-They will be impressed by what you can do!
+Local Storage: The code shows how to use the localStorage API to store and retrieve data in the browser's local storage. By leveraging the setItem() and getItem() methods, we can persist the user's event descriptions even when the page is refreshed.
 
-Remember, it is easy to forget exactly how Valuable and Impressive your skills are, as well as How Much You’ve Learned!
-So quantify that here!
+Time Handling with Day.js: Day.js is a lightweight JavaScript library for manipulating and formatting dates and times. In this code, we use Day.js to get the current hour and format the date displayed in the header. By comparing the current hour with the hour of each time block, we can dynamically apply appropriate CSS classes.
 
+Iterating Over Elements: The code demonstrates how to iterate over multiple elements using jQuery's each() function. It allows us to perform actions on each element individually, such as applying CSS classes or loading saved event descriptions.
+
+CSS Class Manipulation: By adding or removing CSS classes dynamically, we can change the appearance of elements based on specific conditions. In this code, different CSS classes are applied to time blocks to indicate whether they are in the past, present, or future.
+
+Separation of Concerns: The code separates different functionalities into separate functions, making the code more modular and maintainable. Each function has a clear purpose, such as saving events, loading events, applying time block classes, and handling the save button click event.
+
+These learning points showcase some important concepts in web development, including event handling, DOM manipulation, data persistence, date/time handling, and code organization. Understanding these concepts is crucial for building interactive and dynamic web applications.
 
 ## Author Info
 
-```md
-### Farley Wittles 
+
+### Jesus Thomas Reyes 
 
 
-* [Portfolio](https://youtu.be/bHX54GCrDB4)
-* [LinkedIn](https://youtu.be/bHX54GCrDB4)
-* [Github](https://youtu.be/bHX54GCrDB4)
-```
-
-The user has looked through your whole README, and gotten familiar with your application. 
-This is where you take credit, and make it easy for them to learn more about you!
-Direct them to the following:
-- Your GitHub Profile
-- Your LinkedIn
-- Your Portfolio Website
-- And Anything Else You Want!
-
-Give credit where credit is due! 
-
-If you Pseudocode or Pair Program with someone else, give them kudos in your Contributors section!
-
-
-## Credits
-
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
-
-
-## License
-
-The last section of a good README is a license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, use [https://choosealicense.com/](https://choosealicense.com/)
-
-
----
-
-🏆 The sections listed above are the minimum for a good README, but your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-
-Badges aren't _necessary_, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, consider adding a heading called "Features" and listing them there.
-
-## Contributing
-
-If you created an application or package and would like other developers to contribute it, you will want to add guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them.
-
----
-
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+* [Portfolio](https://jesustgr.github.io/my-portfolio/)
+* [LinkedIn](https://www.linkedin.com/in/jesus-thomas-reyes-aa001a192/)
+* [Github](https://github.com/jesustgr)
