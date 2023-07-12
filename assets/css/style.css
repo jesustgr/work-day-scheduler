@@ -1,12 +1,15 @@
+/* Centers header */
 header {
   text-align: center;
 }
 
+/* General styling for body */
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
 
+/* Styling for time blocks */
 textarea {
   background: transparent;
   border: none;

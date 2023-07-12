@@ -1,6 +1,4 @@
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html.
+// Wraps all code that interacts with the DOM in a call to jQuery
 $(document).ready(function() {
   
   // Function to save the user input in local storage
@@ -18,6 +16,7 @@ $(document).ready(function() {
     });
   }
   
+  // Function to apply the appropriate class to each time block based on the current hour
   function applyTimeBlockClasses() {
     var currentHour = dayjs().hour();
 
