@@ -28,7 +28,7 @@ When the user opens the planner, the current day is displayed at the top of the 
 
 <img src="assets/images/highlighted-time-block.png" height="450" width="720" >
 
-When hovering over a time block, the border is highlighted with a color according to the user's computer settings
+When the user clicks on a time block, the border is highlighted with a color according to the user's computer settings
 
 <img src="assets/images/save-button-hover.png" height="450" width="720" >
 
